@@ -5,10 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-p {
-    line-height: 2rem;
-    color: white;
-}
+
 
 body {
   background-color: black;
@@ -43,6 +40,7 @@ body {
 
 .icon-block .material-icons {
     font-size: inherit;
+    color:#18539d;
 }
 
 footer.page-footer {
@@ -52,7 +50,7 @@ footer.page-footer {
 #particles-js {
     height: 100% !important;
     width: 100% !important;
-    position: fixed !important;
+    position: absolute;
     top: 0 !important;
     left: 0 !important;
     z-index: 0 !important;
@@ -64,4 +62,19 @@ footer.page-footer {
     background: -moz-linear-gradient(red, MidnightBlue ); /* For Firefox 3.6 to 15 */
     background: linear-gradient(black, MidnightBlue ); /* Standard syntax */
     height: 1080px;
+}
+
+
+// html{
+//   background:#ecf0f1;
+// }
+
+.svg-container{
+  width:auto;
+  height:auto;
+  position:asbolute;
+}
+
+[class^="circle-"]{
+  opacity:0;
 }
