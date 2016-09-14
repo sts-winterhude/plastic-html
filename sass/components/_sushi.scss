@@ -1,0 +1,47 @@
+
+$lines: 100;
+$lineColor: #FFFFFF;
+$backGroundColor: #57e3f8;
+
+html {
+  height: 100%;
+  background: $backGroundColor;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  position : absolute;
+  top: 50%;
+  left: -50%;
+}
+
+@for $i from 0 through $lines {
+  .lines#{$i} {
+    width: 200%;
+    height: 10px;
+    background-image: radial-gradient(circle at center , transparent 0%,  transparent 10%, rgba($lineColor,1) 100%);
+    transform-style: preserve-3d;
+    animation: spin#{$i} 10s linear infinite;
+    transform: rotateX(10deg) rotateZ(#{((360/$lines)*$i)}deg);
+}
+}
+@for $i from 0 through $lines {
+  @include keyframes(spin#{$i}) {
+    0% {transform: rotateZ(#{((360/$lines)*$i)}deg); }
+    100% { transform: rotateZ(#{((360/$lines)*$i)+360}deg); }
+    }
+}
+
+
+#sushi {
+  font-size: 3rem;
+  display: flex;
+
+}

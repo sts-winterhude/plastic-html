@@ -1,0 +1,67 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+p {
+    line-height: 2rem;
+    color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.button-collapse {
+    color: $secondary-color;
+    margin-left: 5px;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+    z-index: 1;
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+#particles-js {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 0 !important;
+}
+.gradient-1 {
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, MidnightBlue ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, MidnightBlue ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, MidnightBlue ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, MidnightBlue ); /* Standard syntax */
+    height: 1080px;
+}
