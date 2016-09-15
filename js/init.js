@@ -1,5 +1,6 @@
 $(document).ready(function() {
+    $('ul.tabs').tabs();
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
-    $('ul.tabs').tabs();
+    $('.tooltipped').tooltip({delay: 50});
 });
