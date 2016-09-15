@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+    <title>Plastik Projekt</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -21,13 +21,13 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#!">Home</a></li>
                         <li><a href="#!">Alternativen</a></li>
-                        <li><a href="#!">Essays</a></li>
+                        <li><a href="#essays">Essays</a></li>
                         <li><a href="#!">Vergleich</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
                         <li><a href="#!">Home</a></li>
                         <li><a href="#!">Alternativen</a></li>
-                        <li><a href="#!">Essays</a></li>
+                        <li><a href="#essays">Essays</a></li>
                         <li><a href="#!">Vergleich</a></li>
                     </ul>
                 </div>
@@ -62,52 +62,33 @@
                 </div>
             </div>
             <h2 class="center white-text">Umwelt und so</h2>
+            <h4 class="center white-text">Life in Plastic, it's Fantastic?</h4>
             <div class="container">
 
                 <!--   Icon Section   -->
                 <div class="row">
-                    <div class="col s12 m4 center">
+                    <div class="col s12 m6 center">
                         <div class="card-panel">
                             <div class="icon-block">
-                                <h2><i class="material-icons">flash_on</i></h2>
-                                <h5>Speeds up development</h5>
+                                <img src="images/brokoli.gif" class="responsive-img" alt="" />
+                                <h5>Schadstoffe</h5>
                                 <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m4 center">
+                    <div class="col s12 m6 center">
                         <div class="card-panel">
                             <div class="icon-block">
-                                <h2><i class="material-icons">group</i></h2>
-                                <h5>User Experience Focused</h5>
+                                <img src="images/recycle_yeah.gif" class="responsive-img" alt="" />
+                                <h5>Recycling, die Rettung?</h5>
                                 <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system
                                     across all platforms allow for a more unified user experience.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 center">
-                        <div class="card-panel">
-                            <div class="icon-block">
-                                <h2><i class="material-icons">settings</i></h2>
-                                <h5>Easy to work with</h5>
-                                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center">
-                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
-        </div> -->
         <div class="gradient-1">
             <div class="container">
                 <div class="row card-panel">
@@ -121,7 +102,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row card-panel" style="z-index:10;">
+                <div class="row card-panel" style="z-index:10;" id="essays">
                     <div class="col s12">
                         <ul class="tabs">
                             <li class="tab col s4"><a href="#essay1">Essay 1</a></li>
@@ -253,7 +234,14 @@
                 <div class="row">
                     <div class="card-panel">
                         <h3 class="center">Auswertung</h3>
-                        <table>
+                        <div class="hide-on-med-and-up center">
+                            <img src="images/idk.png" class="repsonsive-img" alt="" />
+                            <p class="flow-text">Leider sind Tabelle auf Mobilgeräten schwer darzustellen :/</p>
+                            <p class="flow-text">Schnapp dir am besten einen Laptop oder ein Tablet um einen Blick auf die Tabelle zu werfen ;)</p>
+                            <button type="button" class="trotzdem waves-effect waves-light btn" name="button">Show me anyway</button>
+                        </div>
+
+                        <table id="table" class="hide-on-small-and-down bordered responsive-table ">
                             <tr>
                                 <th></th>
                                 <th class="tooltipped" data-position="top" data-delay="50" data-tooltip="aus Polyethylen">Plastiktüte</th>
@@ -331,42 +319,24 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="ship-container">
-            <div class="ocean"></div>
-            <div class="ocean-overlay"></div>
-            <div class="here-there">
-                <div class="traslate">
-                    <div class="ship">
-                        <div class="bottom-1">
-                            <div class="bottom-1-top"></div>
-                            <div class="bottom-1-top-left"></div>
-                            <div class="bottom-1-top-right">
-                                <div class="bottom-1-top-right-window"></div>
-                            </div>
-                        </div>
-                        <div class="ship-body">
-                            <div class="middle-window"></div>
-                            <div class="blue-strip-top"></div>
-                            <div class="blue-strip-bottom"></div>
-                            <div class="ship-body-top-back">
-                                <div class="blue-strip-top-half"></div>
-                            </div>
-                            <div class="chimney-base">
-                                <div class="chimney"></div>
-                                <div class="chimney"></div>
-                            </div>
-                        </div>
-                        <div class="ship-body-top-front">
-                            <div class="top-antenna"></div>
-                            <div class="circular-base"></div>
-                            <div class="circular-base-1"></div>
-                        </div>
-                        <div class="ship-body-top-front-mirror"></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </main>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                Anjo, Joshua und Tooom
+                <a class="waves-effect waves-light btn modal-trigger right" href="#impressum">Impressum</a>
+            </div>
+        </div>
+    </footer>
+    <div id="impressum" class="modal">
+        <div class="modal-content">
+            <h4>Impressum</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Wow</a>
+        </div>
+    </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -376,7 +346,6 @@
     <script type="text/javascript" src="js/init.js"></script>
     <script type="text/javascript" src="js/globe.js"></script>
     <script type="text/javascript" src="js/atom.js"></script>
-
 </body>
 
 </html>
