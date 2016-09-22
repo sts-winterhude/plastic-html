@@ -88,3 +88,9 @@ footer.page-footer {
 .emoji {
   font-size: 110px;
 }
+
+.transparent {
+  background-color: transparent !important;
+  transform: translateZ(0);
+  transition: 0.3s;
+}

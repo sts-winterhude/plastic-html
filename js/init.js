@@ -11,3 +11,14 @@ $(document).ready(function() {
 $('.trotzdem').click( function() {
     $("#table").toggleClass("hide-on-small-and-down");
 } );
+
+// Add shadow class to nav-wrapper when scrolling down
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 10) {
+      $("nav").removeClass("transparent");
+    } else {
+        $("nav").addClass("transparent");
+
+
+    }
+});
